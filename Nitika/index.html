@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel = "stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="search">
+            <h1>Enter city and country</h1>
+            <input type="text" class="city" id="city" placeholder="city">
+            <div class="country_div">
+                <select id="country" name="country"></select>
+                <img class="flag"src="https://flagsapi.com/IN/flat/64.png">
+            </div>
+            <button class="btn">Get Result</button>
+        </div>
+
+        <div class="weather_header">
+            <h1>Weather Forcast</h1>
+        </div>
+        <div class="current_weather">
+            <div class="heat">
+                <div class="heat_icon">
+                    <img src="https://www.freeiconspng.com/thumbs/heating-icon/heating-icon-7.png">
+                </div>
+                <div class="heat_measure">
+                    <h1 class = "temp_in_text">____</h1>
+                    <p class = "city1">___</p>
+                </div>
+            </div>
+            <div class="weather_details">
+                <div class="weather_now">
+                    <p>Now</p>
+                    <h1>___</h1>
+                    <p class = "feels_like">_____</p>
+                    <p class="cloud"></p>
+                </div>
+                <div class="other_details">
+                    <h2 class="haze">Haze</h2>
+                    <div class="others">
+                        <div>
+                            <p style="font-weight: bold;">Max Temp: </p>
+                        </div>
+                        <div>
+                            <p class="maxTemp_value">____</p>
+                        </div>
+                    </div>
+                    <div class="others">
+                        <div>
+                            <p style="font-weight: bold;">Humidity: </p>
+                        </div>
+                        <div>
+                            <p class="Humidity_value">___</p>
+                        </div>
+                    </div>
+                    <div class="others">
+                        <div>
+                            <p style="font-weight: bold;">Wind: </p>
+                        </div>
+                        <div>
+                            <p class="Wind_value">___</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="five_day_forecast">
+            <h2>5-Day Forecast</h2>
+            <div class="forecast_container">
+                <!-- Forecast items will be injected here -->
+            </div>
+        </div>
+    </nav>
+    <script src="country.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
