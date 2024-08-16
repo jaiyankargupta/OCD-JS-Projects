@@ -1,0 +1,166 @@
+*{
+    padding: 0px;
+    margin: 0 px;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.body{
+    background-color: #b1ccd8;
+}
+.search{
+    background-color: #95d6ea;
+    color:#0c4561;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.search:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
+#city{
+    border:none;
+    outline: none;
+    border-radius: 10px;
+    padding: 8px;
+    background-color: #edf9ff;
+    cursor: pointer;
+    width: 150px;
+    color:#0c4561;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.country_div{
+    display:flex;
+    align-items: center;
+    margin-top: 10px;
+    gap:5px;
+    margin-left: 0px;
+}
+.flag{
+    width:40px;
+}
+#country{
+    margin-left: 10px;
+    border:none;
+    outline:none;
+    border-radius: 10px;
+    padding:8px;
+    background-color: #edf9ff;
+    cursor:pointer;
+    width:150px;
+}
+.btn{
+    background-color: #0c4561;
+    color:#edf9ff;
+    border-radius: 12px;
+    padding:12px;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    margin-top: 12px;
+    cursor: pointer;
+}
+.weather_header{
+    background-color: #c3e4f3;
+    color:#0c4561;
+    padding:10px;
+    border-bottom: 2px solid #0c4561;
+}
+.weather_header h1{
+    text-align: center;
+    font-size: 25px;
+}
+.heat{
+    display:flex;
+    gap:20px;
+    padding: 15px;
+    background-color: #c3e4f3;
+    color:#0c4561;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.heat:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+.heat_icon{
+    background-color: #ff9b83;
+    border-radius: 10px;
+    padding: 4px;
+}
+
+.heat_icon img{
+    width: 40px;
+}
+.heat_measure{
+    line-height: 4px;
+}
+
+.weather_details{
+    display:flex;
+    justify-content:space-between;
+    margin-top: 15px;
+    background-image: url("https://png.pngtree.com/background/20210709/original/pngtree-high-rise-building-good-weather-gradient-cloud-picture-image_916005.jpg");
+    padding: 30px;
+
+}
+.weather_now{
+    color:#0c4561;
+    line-height: 4px;
+    margin-left: 30px;
+    
+}
+.other_details{
+    color:#0c4561;
+    margin-right: 30px;
+}
+.others{
+    display: flex;
+    line-height: 4px;
+}
+
+
+.five_day_forecast {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #c3e4f3;
+    color: #0c4561;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.five_day_forecast h2 {
+    text-align: center;
+    font-size: 22px;
+}
+
+.forecast_container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.forecast_item {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #edf9ff;
+    width: 120px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.forecast_item img {
+    width: 50px;
+}
+
+.forecast_item h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.forecast_item p {
+    margin: 2px 0;
+    font-size: 14px;
+}
+
+
