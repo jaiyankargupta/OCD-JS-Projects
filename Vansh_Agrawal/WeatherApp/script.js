@@ -9,7 +9,9 @@ console.log(`hello`);
 async function checkWeather(city) {
   try {
     const response = await fetch(`${url}${city}&appid=${apikey}`);
-    if ((response.state = "404")) alert("Enter a valid city name");
+    if ((response.state == "404"))
+        { alert("Enter a valid city name");
+        }
     else {
       let data = await response.json();
       console.log(data);
