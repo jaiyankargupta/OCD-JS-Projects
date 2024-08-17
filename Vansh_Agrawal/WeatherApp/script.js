@@ -92,7 +92,7 @@ async function forecastWeather(city)
 
             const forecast_html = `
                 <div class="forecast_item" >
-                    <h4>${forecast_day}</h4>
+                    <h2>${forecast_day}</h2>
                     <img src="./images/${state}.png" alt="Weather Icon">
                     <p>Temp :${Number(item.main.temp).toFixed(1)}°c</p>
                     <p>Humidity: ${item.main.humidity}%</p>
