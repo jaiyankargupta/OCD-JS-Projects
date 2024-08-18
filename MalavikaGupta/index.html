@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="Get accurate weather forecasts for any location">
+    <meta property="og:title" content="Weather App">
+    <meta property="og:description" content="Get accurate weather forecasts for any location">
+    <meta property="og:image" content="og-image.jpg">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div id="logo">
+            <img src="logo.png" alt="Weather App Logo" id="logo-img">
+        </div>
+        <h1>Weather Forecast</h1>
+        <nav>
+            <ul>
+                <li><a href="#home" aria-label="Home">Home</a></li>
+                <li><a href="#about" aria-label="About">About</a></li>
+                <li><a href="#contact" aria-label="Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main id="app">
+        <div id="weather-container">
+            <div id="current-weather" aria-live="polite">
+                <h2>Weather forecasting made easy</h2>
+            </div>
+            <div id="forecast-container">
+                
+                <div id="forecast" aria-live="polite">
+                </div>
+            </div>
+        </div>
+        <div id="slider">
+            <!-- Weather Images Slider -->
+            <img src="weather1.jpg" alt="Sunny weather">
+            <img src="weather2.jpg" alt="Rainy weather">
+            <img src="weather3.jpg" alt="Snowy weather">
+            <img src="weather4.jpg" alt="Snowy weather">
+        </div>
+
+    </main>
+
+    <div id="loading" style="display: none;" aria-hidden="true">
+        <img src="spinner.gif" alt="Loading...">
+    </div>
+
+    <!-- Search Section -->
+    <div id="search">
+        <input type="text" id="city-input" placeholder="Enter city name" aria-label="City name">
+        <button id="search-btn" aria-label="Search">Search</button>
+        <button id="geolocation-btn">Use My Location</button>
+        <button id="unit-toggle">Toggle °C/°F</button>
+        <button id="dark-mode-toggle">Toggle Dark Mode</button>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Weather App. All rights reserved.</p>
+    </footer>
+
+    <noscript>
+        <p>This website requires JavaScript to function properly. Please enable JavaScript in your browser settings.</p>
+    </noscript>
+
+    <script src="script.js"></script>
+</body>
+</html>
